@@ -1,0 +1,23 @@
+{
+  "name": "monday",
+  "version": "1.0.0",
+  "description": "Corporate webpage using HTML5, CSS3",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntociAlinGeorgian/GoMonday.git"
+  },
+  "author": "Alin Georgian Antoci",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntociAlinGeorgian/GoMonday/issues"
+  },
+  "homepage": "https://github.com/AntociAlinGeorgian/GoMonday#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}

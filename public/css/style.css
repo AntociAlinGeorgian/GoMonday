@@ -1,0 +1,104 @@
+/*
+=======================================
+General
+=======================================
+*/
+html,
+body{
+  margin: 0;
+  height: 100%;
+  background: #fff;
+  overflow-x: hidden;
+  color: #212121;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+/*
+=======================================
+Navbar
+=======================================
+*/
+
+.navbar-brand{
+  color: #fff !important;
+  font-family: Montserrat;
+  font-size: 24px;
+}
+
+.navbar-brand::first-letter{
+  color: #3BAED9 !important;
+}
+
+.navbar ul{
+  text-transform: uppercase;
+  font-family: Montserrat;
+  font-size: 11px;
+  color: #fff !important;
+}
+
+.navbar-inverse .navbar-nav > li >a {
+  color: #fff !important;
+}
+
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/*
+=======================================
+Home
+=======================================
+*/
+
+.header-home{
+  background: url('../img/home.jpeg');
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden !important;
+}
+
+.header-home .header-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,.7);
+}
+
+.header-content .header-cont{
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+
+.header-content .header-cont h1 {
+  font-weight: 300;
+  font-size: 42px;
+  letter-spacing: 4px;
+  display: inline-block;
+  color: #fff;
+}
+
+.header-content .header-cont h1 span{
+  font-weight: 300;
+  font-size: 58px;
+  color: #3BAED9;
+}
+
+.header-content .header-cont h3{
+  margin: 40px 0;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: 2px;
+}
