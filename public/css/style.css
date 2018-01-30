@@ -587,5 +587,87 @@ PRICES
   left: -65px;
   transform: rotate(-35deg);
   background: #3bafda;
+}
 
+
+/*
+=======================================
+TESTIMONIALS
+=======================================
+*/
+
+.testimonials {
+  background: url('../img/testimonials.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.testimonials-overlay {
+  background: rgba(33, 33, 33, 0.8);
+  text-align: center;
+  padding: 120px 0;
+}
+
+.testimonial-box {
+  margin: 0 auto;
+  float: none;
+  padding-left: 30px;
+}
+
+.testimonial-box h3 {
+  color: #3BAFDA;
+}
+
+.testimonials .icon-testimonial {
+  margin-bottom: 40px;
+}
+
+.testimonials .icon-testimonial i,
+.testimonials .icon-testimonial span {
+  font-size: 45px;
+  color: #fff;
+}
+
+
+.testimonial-box p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 27px;
+  margin-bottom: 30px;
+  letter-spacing: 1.5px;
+}
+
+.testimonial-box h3 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 14px;
+  padding-bottom: 30px;
+  font-weight: 700;
+}
+
+.testimonial-box span {
+  position: relative;
+  text-transform: none;
+  letter-spacing: 2px;
+  font-weight: 400;
+  display: block;
+  color: #fff;
+  font-style: italic;
+  font-size: 13px;
+}
+
+
+.owl-theme .owl-dots .owl-dot span {
+  background: rgba(255,255,255,.5);
+  width: 8px;
+  height: 8px;
+  margin: 0 10px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #FFF;
+}
+.owl-theme .owl-dots .owl-dot:focus {
+  outline: none;
 }

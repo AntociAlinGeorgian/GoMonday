@@ -51,4 +51,11 @@ $(document).ready(function() {
             });
         }
     });
+
+    // OWL CAROUSEL TRIGGER
+    $('.owl-carousel').owlCarousel({
+        items: 1,
+        margin: 0,
+        dots: true
+     });
 });
