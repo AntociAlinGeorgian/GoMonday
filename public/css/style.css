@@ -313,3 +313,148 @@ Services
   color: #fff;
   background: #3bafda;
 }
+
+
+/*
+=======================================
+Work
+=======================================
+*/
+
+.work {
+  padding: 120px 0 110px 0;
+}
+
+.work .filter-work {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.work .filter-work a {
+  color: #212121;
+  cursor: pointer;
+  line-height: 27px;
+  text-transform: uppercase;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin: 0 14px;
+  transition: ease-out .2s;
+  padding: 7px 14px;
+  border: 1px solid #3bafda;
+  color: #3bafda;
+}
+
+.work .filter-work .is-checked {
+  color: #fff;
+  background: #3bafda;
+}
+
+
+.work .work-item {
+  padding: 0 0px 10px 7px;
+  width: 33%;
+}
+
+.work .work-caption {
+  position: relative;
+}
+
+.work .work-caption img {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.work .work-caption .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: ease-out .3s;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: rgba(59, 175, 218, 0.8);
+}
+
+.work .work-caption .overlay:focus {
+  outline: none;
+}
+
+.work .work-caption .overlay span {
+  color: #fff;
+}
+
+.work .work-item:hover .overlay {
+  opacity: 1;
+}
+
+.work .work-caption .info-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 0;
+  text-align: left;
+}
+
+.work .work-caption .info-content h4 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-family: 'Dosis', sans-serif;
+}
+
+.work .work-caption:focus,
+.work .work-item:focus,
+.work .work-caption img:focus,
+.work .work-caption a:focus {
+  outline: none;
+}
+
+.white-popup {
+  position: relative;
+  background: #fff;
+  width: auto;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.white-popup div {
+  padding: 30px;
+  text-align: center;
+}
+
+.white-popup div h3 {
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: 'Docsis', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+}
+
+.white-popup  div p {
+  font-size: 14px;
+  text-align: left;
+  line-height: 27px;
+}
+
+.white-popup img {
+  width: 100%;
+  height: auto;
+}
+
+.mfp-close {
+  left: 0;
+}
+
+.mfp-close:hover{
+  color: #fff;
+}
+
+.mfp-close-btn-in .mfp-close {
+  color: #fff !important;
+}
