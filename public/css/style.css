@@ -479,6 +479,7 @@ FACTS
 .facts .counting-icon span {
   font-size: 50px;
   padding-top: 0;
+  color: #3bafda;
 }
 
 .facts h4 {
@@ -670,4 +671,63 @@ TESTIMONIALS
 }
 .owl-theme .owl-dots .owl-dot:focus {
   outline: none;
+}
+
+
+/*
+=======================================
+BLOG
+=======================================
+*/
+
+.blog-item {
+  color: #212121;
+  padding: 45px;
+  position: relative;
+  border: 1px solid #e6e6e6;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.blog-item:hover a,
+.blog-item:hover {
+  background: #252525;
+  color: #fff;
+}
+
+.blog-item .post-meta {
+  font-size: 13px;
+  font-family: 'Docsis', sans-serif;
+  font-weight: 400;
+}
+
+.blog-item .post-meta ul li {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.blog-item .post-meta ul li i{
+  padding-right: 2px;
+}
+
+.blog-item .post-title {
+  margin: 15px 0;
+}
+
+.blog-item .post-title a {
+  transition: all 0.3s ease-in-out;
+}
+
+.blog-tem .post-title h3 {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.blog-item .post-content p {
+  color: #6f6f6f;
+  font-size: 14px;
+}
+
+.blog-item:hover p{
+  color: #999;
 }

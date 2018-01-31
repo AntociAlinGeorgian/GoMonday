@@ -38,24 +38,28 @@ $(document).ready(function() {
     });
   });
 
-  // COUNT TO
-    var eventFired = false,
-    objectPositionTop = $('.facts').offset().top;
-    $(window).on('scroll', function () {
-        var currentPosition = $(document).scrollTop() + 400;
-        if (currentPosition >= objectPositionTop && eventFired === false) {
-            eventFired = true;
-            $(".count").countTo({
-                speed: 5000,
-                refreshInterval: 80
-            });
-        }
-    });
+  // COUNT TRIGGER
+  var triggered = false;
+  $('body').scroll(function() {
+    var factsProps = $('#facts')[0].getBoundingClientRect();
+    var factsHeight = factsProps.height;
+    var factsY = factsProps.top;
 
-    // OWL CAROUSEL TRIGGER
-    $('.owl-carousel').owlCarousel({
-        items: 1,
-        margin: 0,
-        dots: true
-     });
+   if ( factsY <= window.innerHeight - factsHeight && triggered === false){
+     console.log(triggered);
+       $('.count').countTo({
+         speed: 3000,
+         refreshInterval:90
+       });
+       triggered = true;
+   }
+  });
+
+
+  // OWL CAROUSEL TRIGGER
+  $('.owl-carousel').owlCarousel({
+    items: 1,
+    margin: 0,
+    dots: true
+  });
 });

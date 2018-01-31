@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,33 +18,35 @@
 
 
 </head>
+
 <body>
 
   <!-- === NAVBAR === -->
   <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="logo navbar-brand" href="#">Monday</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#price">Price</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
+        <a class="logo navbar-brand" href="#home">Monday</a>
       </div>
-    </nav>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#price">Price</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
 
   <!-- === HEADER === -->
   <section class="header-home" id="home">
@@ -74,7 +77,8 @@
         <!-- About content -->
         <div class="about-content col-md-9">
           <h3>It all started with a simple idea</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sequi, dolor voluptatum quod.Vero quae voluptates in velit libero quas voluptatum cupiditate, obcaecati, nulla, vitae delectus reprehenderit debitis repellat, quis amet eveniet labore error. Asperiores!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sequi, dolor voluptatum quod.Vero quae voluptates in velit libero quas voluptatum cupiditate, obcaecati, nulla, vitae
+            delectus reprehenderit debitis repellat, quis amet eveniet labore error. Asperiores!</p>
           <div class="signature">
             <img src="./img/signature.png" alt="">
           </div>
@@ -198,11 +202,11 @@
 
         <!-- work filters -->
         <div class="button-group filter-work">
-          <a  class="button is-cheched" data-filter="*">All</a>
-          <a  class="button" data-filter=".item-business">Business</a>
-          <a  class="button" data-filter=".item-consumer">Consumer</a>
-          <a  class="button" data-filter=".item-finance">Finance</a>
-          <a  class="button" data-filter=".item-investments">Investments</a>
+          <a class="button is-cheched" data-filter="*">All</a>
+          <a class="button" data-filter=".item-business">Business</a>
+          <a class="button" data-filter=".item-consumer">Consumer</a>
+          <a class="button" data-filter=".item-finance">Finance</a>
+          <a class="button" data-filter=".item-investments">Investments</a>
         </div>
         <!-- end work filters -->
 
@@ -385,7 +389,7 @@
   <!-- END WORK -->
 
   <!-- FACTS -->
-  <section class="sections facts">
+  <section class="sections facts" id="facts">
     <div class="container">
       <div class="row">
         <!-- facts item -->
@@ -573,6 +577,105 @@
   </section>
   <!-- END TESTIMONIALS -->
 
+  <!-- BLOG -->
+  <section class="sections blog">
+    <div class="container">
+      <div class="row">
+        <!-- title -->
+        <div class="title">
+          <h4>Latest news</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, rem.</p>
+        </div>
+        <!-- end title -->
+
+        <!-- blog -->
+        <div class="blog-content">
+          <!-- blog item -->
+          <div class="col-md-4">
+            <div class="blog-item">
+              <div class="post-meta">
+                <ul>
+                  <li>
+                    <i class="fa fa-tags"></i>
+                    <span>Finance</span>
+                  </li>
+                  <li>
+                    <i class="fa fa-calendar-o"></i>
+                    <span>February 10, 2018</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="post-title">
+                <a href="#">
+                  <h3>Lorem ipsum dolor sit amet.</h3>
+                </a>
+              </div>
+              <div class="post-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, vel, maiores. Distinctio praesentium sint rerum accusamus, quasi repellat itaque deleniti.</p>
+              </div>
+            </div>
+          </div>
+          <!-- end blog item -->
+
+          <!-- blog item -->
+          <div class="col-md-4">
+            <div class="blog-item">
+              <div class="post-meta">
+                <ul>
+                  <li>
+                    <i class="fa fa-tags"></i>
+                    <span>Investment</span>
+                  </li>
+                  <li>
+                    <i class="fa fa-calendar-o"></i>
+                    <span>February 5, 2018</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="post-title">
+                <a href="#">
+                  <h3>Lorem ipsum dolor sit amet.</h3>
+                </a>
+              </div>
+              <div class="post-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, vel, maiores. Distinctio praesentium sint rerum accusamus, quasi repellat itaque deleniti.</p>
+              </div>
+            </div>
+          </div>
+          <!-- end blog item -->
+
+          <!-- blog item -->
+          <div class="col-md-4">
+            <div class="blog-item">
+              <div class="post-meta">
+                <ul>
+                  <li>
+                    <i class="fa fa-tags"></i>
+                    <span>Business</span>
+                  </li>
+                  <li>
+                    <i class="fa fa-calendar-o"></i>
+                    <span>February 1, 2018</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="post-title">
+                <a href="#">
+                  <h3>Lorem ipsum dolor sit amet.</h3>
+                </a>
+              </div>
+              <div class="post-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, vel, maiores. Distinctio praesentium sint rerum accusamus, quasi repellat itaque deleniti.</p>
+              </div>
+            </div>
+          </div>
+          <!-- end blog item -->
+        </div>
+        <!-- end blog -->
+      </div>
+    </div>
+  </section>
+  <!-- END BLOG -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -584,4 +687,5 @@
   <script src="./js/jquery.countTo.js"></script>
   <script src="./js/owl.carousel.min.js"></script>
 </body>
+
 </html>
