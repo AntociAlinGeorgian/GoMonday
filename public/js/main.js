@@ -1,6 +1,9 @@
 $(document).ready(function() {
-  "use strict";
-  console.log('Page ready!');
+
+  //preloader
+  $(window).on('load', function(){
+    $('.loading').fadeOut(500);
+  });
 
   //typing text conf.
   var typed = new Typed('.header-content .header-cont h3 span', {
