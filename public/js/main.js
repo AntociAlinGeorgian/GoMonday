@@ -12,6 +12,22 @@ $(document).ready(function() {
     } else {
       $('.navbar').removeClass('fixed');
     }
+
+    // scrollspy by Enoh $$
+    $('.navbar a').removeClass('active');
+    $('.sections').each(function(){
+
+
+      var section = this;
+      var topSection = this.getBoundingClientRect().top;
+      var wh = window.innerHeight;
+      if (topSection - 80 <= wh/2 && (Math.abs(topSection - 80)) <= wh/2){
+        $('.navbar a.nav-item-' + this.id).addClass('active');
+        console.log(this.id);
+
+      }
+    });
+
   });
 
   //collapsed menu
@@ -22,14 +38,13 @@ $(document).ready(function() {
     }
   });
 
-
+  //smooth scroll
   $("#navbar a").click(function(e) {
     e.preventDefault();
     var offsetTop = $( $(this).attr('href') )[0].offsetTop;
     $('html, body').animate({
         scrollTop: offsetTop - 80
     }, 1000);
-
   });
 
   //typing text conf.
