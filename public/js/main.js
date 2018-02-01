@@ -14,20 +14,14 @@ $(document).ready(function() {
     }
 
     // scrollspy by Enoh $$
-    $('.navbar a').removeClass('active');
     $('.sections').each(function(){
-
-
       var section = this;
       var topSection = this.getBoundingClientRect().top;
       var wh = window.innerHeight;
       if (topSection - 80 <= wh/2 && (Math.abs(topSection - 80)) <= wh/2){
         $('.navbar a.nav-item-' + this.id).addClass('active');
-        console.log(this.id);
-
       }
     });
-
   });
 
   //collapsed menu
